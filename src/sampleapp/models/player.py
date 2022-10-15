@@ -6,5 +6,8 @@ class Player(models.Model):
     born_on = models.DateField(help_text='生年月日')
     blood_type = models.ForeignKey('BloodType', help_text='血液型', on_delete=models.PROTECT)
 
+    def __str__(self):
+        return self.name
+
     class Meta:
         app_label = 'sampleapp'
