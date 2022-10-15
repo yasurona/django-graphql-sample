@@ -1,2 +1,2 @@
 # django-graphql-sample
-Graphene-Djangoを仕様したAPIサーバのサンプル
+Graphene-Djangoを使用したAPIサーバのサンプル
