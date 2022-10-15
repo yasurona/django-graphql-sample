@@ -26,8 +26,7 @@ project:
 	$(MAKE) _django_admin cmd='startproject $(PROJECT) .'
 
 app:
-	$(MAKE) exec service='web' cmd='mkdir -p apps/$(APP)'
-	$(MAKE) _django_admin cmd='startapp $(APP) apps/$(APP)'
+	$(MAKE) _django_manage cmd='startapp $(APP)'
 
 makemigrations:
 	$(MAKE) _django_manage cmd='makemigrations $(APP)'
